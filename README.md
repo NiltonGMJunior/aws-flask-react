@@ -2,4 +2,4 @@
 
 <!-- [![pipeline status](https://gitlab.com/testdriven/flask-react-auth/badges/master/pipeline.svg)](https://gitlab.com/testdriven/flask-react-auth/commits/master) -->
 
-https://testdriven.io/courses/aws-flask-react/
+Course details: <https://testdriven.io/courses/aws-flask-react/>
