@@ -15,6 +15,7 @@ phases:
       - docker pull $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/test-driven-users:prod || true
       - docker pull $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/test-driven-client:builder || true
       - docker pull $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/test-driven-client:prod || true
+
   build:
     commands:
       - echo building and testing dev images...
@@ -48,6 +49,7 @@ phases:
           -f services/client/Dockerfile.prod \
           -t $AWS_ACCOUNT_ID.dkr.ecr.$AWS_REGION.amazonaws.com/test-driven-client:prod \
           ./services/client
+
   post_build:
     commands:
     - echo pushing prod images to ecr...
